@@ -69,7 +69,7 @@ export default function CartComponent() {
                 <div className={styles.orderSummary}>
                     <div style={{fontWeight: "600", fontSize: "16px"}}>Review Order ({count})</div>
                     <div style={{fontSize: "10px"}}>Prep time: {7 + count} - {10 + count} min</div>
-                    <div style={{margin: "20px 0 0"}}>Total <span>${totalBill}</span></div>
+                    <div style={{margin: "20px 0 0"}}>Total <span>${totalBill.toFixed(2)}</span></div>
                 </div>
             </div>
             <div className={styles.rightBar}>
