@@ -6,6 +6,7 @@ import { IFullItem, IOptions, IStoreItem } from "@/services/storeTypes";
 export default function ProductContainerComponent (item: IStoreItem) {
 
     const [showModal, setShowModal] = useState<boolean>(false);
+    const [showAddedModal, setShowAddedModal] = useState<boolean>(false);
 
     const addToCart = (item: IStoreItem, options?: IOptions) => {
         const rawCartData = localStorage.getItem("cart");
@@ -26,10 +27,21 @@ export default function ProductContainerComponent (item: IStoreItem) {
             localStorage.setItem("cart", JSON.stringify(cartRef));
         }
         window.dispatchEvent(new Event("storage"));
+        triggerAddedModal();
+    }
+
+    const triggerAddedModal = () => {
+        setShowAddedModal(true);
+        setTimeout(() => {
+            setShowAddedModal(false);
+        }, 3000)
     }
 
     return(
         <div className={styles.main}>
+            <div style={{display: showAddedModal ? "flex" : "none"}} className={styles.confirmationModal}>
+                <div>Added <Image src={"/check.svg"} alt="check-mark icon" height={30} width={30}></Image></div>
+            </div>
             <div style={{display: showModal ? "flex" : "none"}} className={styles.selectionModal}>
                 <button onClick={() => setShowModal(false)} className={styles.closeButton}>
                     <Image height={30} width={30} alt="close button" src={"/close.svg"}></Image>
@@ -49,7 +61,7 @@ export default function ProductContainerComponent (item: IStoreItem) {
                 <p className={styles.description}>{item.description}</p>
                 <p className={styles.price}>${item.price}</p>
             </div>
-            <button onClick={() => item.type === "bakery" ? addToCart(item) : setShowModal(true)} className={styles.addButton}>ADD</button>
+            <button onClick={() => item.type === "bakery" ? addToCart(item) : setShowModal(true)} className={styles.addButton}>Add</button>
         </div>
     )
 }

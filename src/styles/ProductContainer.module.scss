@@ -45,6 +45,7 @@
     border: none;
     border-radius: 4px;
     font-weight: 500;
+    font-family: inherit;
     cursor: pointer;
 
     &:hover {
@@ -131,6 +132,37 @@
                 background-color: black;
             }
         }
+    }
+
+}
+
+.confirmationModal {
+    // display: ;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: 600;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 200px;
+    z-index: 1500;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        position: relative;
+        left: 10px;
+        filter: invert(58%) sepia(16%) saturate(1484%) hue-rotate(71deg) brightness(96%) contrast(96%);
     }
 }
 

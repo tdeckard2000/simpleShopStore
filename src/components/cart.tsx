@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "@/styles/Cart.module.scss";
 import { IFullItem, IStoreItem } from "@/services/storeTypes";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CartComponent() {
 
@@ -72,6 +73,10 @@ export default function CartComponent() {
                 </div>
             </div>
             <div className={styles.rightBar}>
+                    <div style={{display: count <= 0 ? "initial" : "none"}} className={styles.emptyCart}>
+                        <div>Cart is Empty</div>
+                        <Link href={"/"}><button className={styles.storeLinkButton}>Store</button></Link>
+                    </div>
                     {list?.map((item, i) => {
                         return (
                             <div key={i} className={styles.listTile}>

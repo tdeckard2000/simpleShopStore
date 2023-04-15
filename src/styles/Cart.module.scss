@@ -97,6 +97,32 @@
     }
 }
 
+.emptyCart {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .storeLinkButton {
+        background-color: rgb(39, 39, 39);
+        color: white;
+        display: block;;
+        align-self: center;
+        height: 40px;
+        width: 120px;
+        border: none;
+        border-radius: 4px;
+        font-weight: 500;
+        font-family: inherit;
+        margin-top: 20px;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: black;
+        }
+    }
+}
+
 @media screen and (max-width: 1000px) { //tablet
     .main {
         flex-direction: column-reverse;
