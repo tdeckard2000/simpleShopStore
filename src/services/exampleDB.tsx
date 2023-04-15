@@ -107,12 +107,44 @@ const itemStore: IStoreItem[] = [
     },
     {
         id: "00014",
-        name: "The BigGuy Sandwich",
+        name: "The BigGuy",
         image: "/bigGuy.JPG",
         description: "A delicious staple on our menu.",
         price: 5.00,
         type: "bakery"
-    }
+    },
+    {
+        id: "00015",
+        name: "Fun on-a Bun",
+        image: "/sandwich2.JPG",
+        description: "A delicious staple on our menu.",
+        price: 5.00,
+        type: "bakery"
+    },
+    {
+        id: "00016",
+        name: "Finest AI Byte",
+        image: "/sandwich3.JPG",
+        description: "A delicious staple on our menu.",
+        price: 5.00,
+        type: "bakery"
+    },
+    {
+        id: "00017",
+        name: "The LittleMan",
+        image: "/sandwich4.JPG",
+        description: "A delicious staple on our menu.",
+        price: 5.00,
+        type: "bakery"
+    },
+    {
+        id: "00018",
+        name: "Serina Sweet",
+        image: "/sweets.JPG",
+        description: "A delicious staple on our menu.",
+        price: 5.00,
+        type: "bakery"
+    },
 ]
 
 export {
