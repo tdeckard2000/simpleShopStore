@@ -59,7 +59,7 @@ export default function ProductContainerComponent (item: IStoreItem) {
             <h1 className={styles.name}>{item.name}</h1>
             <div className={styles.descriptionContainer}>
                 <p className={styles.description}>{item.description}</p>
-                <p className={styles.price}>${item.price}</p>
+                <p className={styles.price}>${item.price.toFixed(2)}</p>
             </div>
             <button onClick={() => item.type === "bakery" ? addToCart(item) : setShowModal(true)} className={styles.addButton}>Add</button>
         </div>

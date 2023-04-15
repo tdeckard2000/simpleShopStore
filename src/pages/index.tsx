@@ -21,7 +21,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.headerContainer}>
           <Link style={{textDecoration: "none"}} href={"/"}>
-            <div className={styles.title}><Image height={20} width={20} src={"/home.svg"} alt="home icon"></Image> Coffee Store</div>
+            <div className={styles.title}><Image height={20} width={20} src={"/home.svg"} alt="home icon"></Image> Coffee Shop</div>
           </Link>
           {/* <Image src={"/pageDivider.svg"} alt='graphic header image' height={20} width={100}></Image> */}
           <CartButtonComponent></CartButtonComponent>
