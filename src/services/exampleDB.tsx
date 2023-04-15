@@ -52,7 +52,7 @@ const itemStore: IStoreItem[] = [
     {
         id: "00007",
         name: "Latte",
-        image: "/coffee6.JPG",
+        image: "/coffee8.JPG",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
@@ -68,7 +68,7 @@ const itemStore: IStoreItem[] = [
     {
         id: "00009",
         name: "Doppio",
-        image: "/coffee8.JPG",
+        image: "/coffee6.JPG",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
