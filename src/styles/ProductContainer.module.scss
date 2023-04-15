@@ -1,9 +1,19 @@
 .main {
     background-color: white;
     border-radius: 4px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.548);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 12px;
-    height: 280px;
+    margin: 10px;
+    height: fit-content;
     width: 200px;
+
+    &:hover {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.233);
+    }
 }
 
 .name {
@@ -15,14 +25,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    object-fit: cover;
+    
+    img {
+        border-radius: 6px;
+    }
 }
 
 .addButton {
     background-color: rgb(39, 39, 39);
     color: white;
     display: block;;
-    margin: auto;
+    align-self: center;
     height: 40px;
     width: 120px;
     border: none;
@@ -36,5 +53,15 @@
 }
 
 .descriptionContainer {
-    font-weight: 500;
+
+    .description {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .price {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+    }
 }

@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Home.module.scss'
 import ProductContainerComponent from '@/components/productContainer'
+import { itemStore } from "@/services/exampleDB";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,12 +17,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <ProductContainerComponent
-          name='Americano Hot'
-          price={3.25}
-          description={"A delicious staple on our menu."}
-          image={"/coffee.svg"}
-        ></ProductContainerComponent>
+        <div className={styles.productContainer}>
+          {itemStore.map((item, i) => {
+            return (
+            <ProductContainerComponent
+              key={item.id}
+              name={item.name}
+              price={item.price}
+              description={item.description}
+              image={item.image}
+            ></ProductContainerComponent>
+            )
+          })}
+        </div>
       </main>
     </>
   )
