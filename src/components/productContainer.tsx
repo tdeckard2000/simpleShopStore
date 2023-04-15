@@ -34,7 +34,7 @@ export default function ProductContainerComponent (item: IStoreItem) {
         setShowAddedModal(true);
         setTimeout(() => {
             setShowAddedModal(false);
-        }, 3000)
+        }, 2000)
     }
 
     return(

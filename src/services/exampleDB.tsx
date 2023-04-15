@@ -12,7 +12,7 @@ const itemStore: IStoreItem[] = [
     {
         id: "00002",
         name: "Cappuccino",
-        image: "/coffee.jpg",
+        image: "/coffee8.jpg",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
@@ -20,7 +20,7 @@ const itemStore: IStoreItem[] = [
     {
         id: "00003",
         name: "Espresso",
-        image: "/coffeeWhiteBg.JPG",
+        image: "/coffee2.JPG",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
@@ -28,7 +28,7 @@ const itemStore: IStoreItem[] = [
     {
         id: "00004",
         name: "Flat White",
-        image: "/coffee.jpg",
+        image: "/coffee3.jpg",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
@@ -36,7 +36,7 @@ const itemStore: IStoreItem[] = [
     {
         id: "00005",
         name: "Caramel Macchiato",
-        image: "/coffeeWhiteBg.JPG",
+        image: "/coffee4.JPG",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
@@ -44,7 +44,7 @@ const itemStore: IStoreItem[] = [
     {
         id: "00006",
         name: "Hazelnut",
-        image: "/coffee.jpg",
+        image: "/coffee5.jpg",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
@@ -52,15 +52,15 @@ const itemStore: IStoreItem[] = [
     {
         id: "00007",
         name: "Latte",
-        image: "/coffeeWhiteBg.JPG",
+        image: "/coffee6.JPG",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
     },
     {
         id: "00008",
-        name: "Latte w/ Almond Milk",
-        image: "/coffee.jpg",
+        name: "Latte Almond Milk",
+        image: "/coffee7.jpg",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
@@ -68,7 +68,7 @@ const itemStore: IStoreItem[] = [
     {
         id: "00009",
         name: "Doppio",
-        image: "/coffeeWhiteBg.JPG",
+        image: "/coffee8.JPG",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
@@ -76,15 +76,15 @@ const itemStore: IStoreItem[] = [
     {
         id: "00010",
         name: "Cortado",
-        image: "/coffee.jpg",
+        image: "/coffee9.jpg",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
     },
     {
-        id: "00011",
+        id: "00010",
         name: "Red Eye",
-        image: "/coffeeWhiteBg.JPG",
+        image: "/coffee11.JPG",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
@@ -92,7 +92,7 @@ const itemStore: IStoreItem[] = [
     {
         id: "00012",
         name: "Galao",
-        image: "/coffee.jpg",
+        image: "/coffee12.jpg",
         description: "A delicious staple on our menu.",
         price: 1.23,
         type: "hot"
@@ -139,6 +139,14 @@ const itemStore: IStoreItem[] = [
     },
     {
         id: "00018",
+        name: "Everything Bagel",
+        image: "/bagel.JPG",
+        description: "A delicious staple on our menu.",
+        price: 5.00,
+        type: "bakery"
+    },
+    {
+        id: "00019",
         name: "Serina Sweet",
         image: "/sweets.JPG",
         description: "A delicious staple on our menu.",
