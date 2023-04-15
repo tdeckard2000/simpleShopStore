@@ -7,7 +7,7 @@ export default function ProductContainerComponent (item: IStoreItem) {
 
     const [showModal, setShowModal] = useState<boolean>(false);
 
-    const addToCart = (item: IStoreItem, options: IOptions) => {
+    const addToCart = (item: IStoreItem, options?: IOptions) => {
         const rawCartData = localStorage.getItem("cart");
         const itemSelection: IFullItem = {
             id: item.id,
@@ -15,7 +15,8 @@ export default function ProductContainerComponent (item: IStoreItem) {
             description: item.description,
             price: item.price,
             image: item.image,
-            size: options.size
+            type: item.type,
+            size: options?.size
         }
         if(!rawCartData) {
             localStorage.setItem("cart", JSON.stringify([itemSelection]));
@@ -48,7 +49,7 @@ export default function ProductContainerComponent (item: IStoreItem) {
                 <p className={styles.description}>{item.description}</p>
                 <p className={styles.price}>${item.price}</p>
             </div>
-            <button onClick={() => setShowModal(true)} className={styles.addButton}>ADD</button>
+            <button onClick={() => item.type === "bakery" ? addToCart(item) : setShowModal(true)} className={styles.addButton}>ADD</button>
         </div>
     )
 }

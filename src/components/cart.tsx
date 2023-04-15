@@ -68,7 +68,7 @@ export default function CartComponent() {
                 <div className={styles.orderSummary}>
                     <div style={{fontWeight: "600", fontSize: "16px"}}>Review Order ({count})</div>
                     <div style={{fontSize: "10px"}}>Prep time: {8 + count} - {11 + count} min</div>
-                    <div style={{margin: "20px 0"}}>Total <span>${totalBill}</span></div>
+                    <div style={{margin: "20px 0 0"}}>Total <span>${totalBill}</span></div>
                 </div>
             </div>
             <div className={styles.rightBar}>
@@ -80,7 +80,7 @@ export default function CartComponent() {
                                 </div>
                                 <div className={styles.detailsContainer}>
                                     <h1 className={styles.name}>{item.name}</h1>
-                                    <p className={styles.description}>{item.description} - {item.size} <br /> {item.price}</p>
+                                    <p className={styles.description}>{item.description} {item.size ? `- ${item.size}` : ""} <br /> ${item.price}</p>
                                     <div className={styles.buttonContainer}>
                                         <button onClick={() => duplicateItem(i)} className={styles.button}>+</button>
                                         <button onClick={() => removeItem(i)} className={styles.button}>-</button>

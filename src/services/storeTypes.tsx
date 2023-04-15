@@ -4,10 +4,11 @@ interface IStoreItem {
     image: string;
     description: string;
     price: number;
+    type: "bakery" | "hot" | "cold";
 }
 
 interface IOptions {
-    size: string;
+    size?: string;
 }
 
 interface IFullItem extends IStoreItem, IOptions {

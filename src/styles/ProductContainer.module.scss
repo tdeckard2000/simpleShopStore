@@ -69,11 +69,12 @@
 .selectionModal {
     position: fixed;
     background-color: rgb(255, 255, 255);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 74%);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     height: 350px;
+    opacity: .97;
     padding: 20px;
     width: 300px;
     z-index: 1200;
@@ -131,8 +132,18 @@
             }
         }
     }
+}
 
-    // .imageContainer {
-    //     margin: auto;
-    // }
+@media screen and (max-width: 1000px) { //tablet
+
+    
+}
+
+@media screen and (max-width: 520px) { //phone
+
+    .main {
+        align-items: center;
+        width: 80%;
+    }
+
 }
