@@ -7,7 +7,7 @@
 
 .headerContainer {
     align-items: center;
-    background-color: #694f5d;
+    background-color: #b19562;
     display: flex;
     justify-content: space-between;
     padding: 12px;
@@ -19,11 +19,11 @@
     
     .title {
         font-weight: 600;
-        color: white;
+        color: rgb(0, 0, 0);
         cursor: pointer;
 
         img {
-            filter: invert(1);
+            // filter: invert(1);
             position: relative;
             top: 3px;
         }
