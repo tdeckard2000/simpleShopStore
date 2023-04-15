@@ -1,19 +1,13 @@
 .main {
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
-}
-
-.productContainer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    width: 100vw;
 }
 
 .headerContainer {
     align-items: center;
-    background-color: rgb(177, 149, 98);
+    background-color: #694f5d;
     display: flex;
     justify-content: space-between;
     padding: 12px;
@@ -25,12 +19,19 @@
     
     .title {
         font-weight: 600;
-        color: black;
+        color: white;
         cursor: pointer;
 
         img {
+            filter: invert(1);
             position: relative;
             top: 3px;
         }
     }
+}
+
+.cartContainer {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 74px);
 }

@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
 import ProductContainerComponent from '@/components/productContainer'
 import { itemStore } from "@/services/exampleDB";
+import CartButtonComponent from '@/components/cartButton'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,11 +19,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.headerContainer}>
+          <Link style={{textDecoration: "none"}} href={"/"}>
+            <div className={styles.title}><Image height={20} width={20} src={"/home.svg"} alt="home icon"></Image> Simple Store</div>
+          </Link>
+          <CartButtonComponent></CartButtonComponent>
+        </div>
         <div className={styles.productContainer}>
           {itemStore.map((item, i) => {
             return (
             <ProductContainerComponent
-              key={item.id}
+              key={item.id + i}
+              id={item.id}
               name={item.name}
               price={item.price}
               description={item.description}

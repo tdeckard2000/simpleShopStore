@@ -65,3 +65,74 @@
         font-weight: 400;
     }
 }
+
+.selectionModal {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    padding: 20px;
+    width: 300px;
+    z-index: 1200;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    cursor: auto;
+
+    .closeButton {
+        border: none;
+        background-color: transparent;
+        border-radius: 30px;
+        right: 0;
+        position: absolute;
+        top: 0;
+        height: 60px;
+        width: 60px;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 18px;
+        cursor: pointer;
+
+        img {
+            filter: invert(37%) sepia(18%) saturate(0%) hue-rotate(180deg) brightness(104%) contrast(93%);
+        }
+
+        &:hover {
+            img {
+                filter: none;
+            }
+        }
+    }
+
+    .optionContainer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 250px;
+        // flex-grow: 1;
+
+        button {
+            background-color: #272727;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            height: 50px;
+            width: 200px;
+            font-family: inherit;
+            cursor: pointer;
+
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+
+    // .imageContainer {
+    //     margin: auto;
+    // }
+}
