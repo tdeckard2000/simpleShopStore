@@ -93,7 +93,7 @@ const itemStore: IStoreItem[] = [
         id: "00012",
         name: "Galao",
         image: "/coffee12.JPG",
-        description: "Distinct and unique flavor profile.",
+        description: "Distinct, unique flavor profile.",
         price: 1.23,
         type: "hot"
     },
@@ -133,7 +133,7 @@ const itemStore: IStoreItem[] = [
         id: "00017",
         name: "The LittleMan",
         image: "/sandwich4.JPG",
-        description: "A delicious staple on our menu.",
+        description: "A delicious menu staple.",
         price: 5.00,
         type: "bakery"
     },
