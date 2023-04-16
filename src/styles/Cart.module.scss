@@ -161,5 +161,8 @@
 
 @media screen and (max-width: 520px) { //phone
 
-
+    .rightBar {
+        height: calc(100% - 200px);
+        width: calc(100% - 40px);
+    }
 }
