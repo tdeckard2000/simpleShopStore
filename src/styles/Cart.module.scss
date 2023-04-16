@@ -134,6 +134,8 @@
         flex-direction: column-reverse;
         min-height: 0;
         height: auto;
+        position: relative;
+        bottom: 0;
     }
 
     .sideBar {

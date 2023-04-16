@@ -33,5 +33,5 @@
 .cartContainer {
     display: flex;
     justify-content: center;
-    height: calc(100vh - 74px);
+    max-height: calc(100vh - 74px);
 }
