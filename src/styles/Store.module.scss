@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     width: 100vw;
+    height: 100%;
 }
 
 .headerContainer {
@@ -33,5 +34,5 @@
 .cartContainer {
     display: flex;
     justify-content: center;
-    max-height: calc(100vh - 74px);
+    height: 100%;
 }
