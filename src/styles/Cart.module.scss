@@ -131,7 +131,8 @@
 
 @media screen and (max-width: 1000px) { //tablet
     .main {
-        flex-direction: column-reverse;
+        display: block;
+        // flex-direction: column-reverse;
         min-height: 0;
         height: auto;
         position: relative;
@@ -140,9 +141,12 @@
 
     .sideBar {
         align-items: center;
+        bottom: 0;
         display: flex;
-        height: fit-content;
-        width: auto;
+        height: 75px;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
 
         .title {
             display: none;
@@ -150,8 +154,8 @@
     }
 
     .rightBar {
+        height: calc(100% - 150px);
         width: calc(100% - 40px);
-        height: auto;
     }
 }
 
